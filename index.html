@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="vCard & Resume Template" />
     <meta name="keywords" content="vcard, resposnive, resume, personal, card, cv, cards, portfolio" />
-    <meta name="author" content="adisurizal" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <meta name="author" content="muhadi" />
+    <link href="css/font.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/basic.css" />
     <link rel="stylesheet" href="css/layout.css" />
@@ -19,8 +19,9 @@
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/gradient.css" />
+    <link rel="stylesheet" href="css/new-skin.css" />
     <link rel="stylesheet" href="css/template-colors/blue.css" />
-    <link rel="shortcut icon" href="images/logo.jpg">
+    <link rel="shortcut icon" href="images/logo.png">
   </head>
 
   <body>
@@ -52,6 +53,42 @@
         </div>
 
         <div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+
+            <!-- Header -->
+            <header class="header">
+
+                <!-- menu -->
+                <div class="top-menu">
+                    <ul>
+                        <li class="active">
+                            <a href="#about-card">
+                                <span class="icon ion-person"></span>
+                                <span class="link">About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#resume-card" id="resume">
+                                <span class="icon ion-android-list"></span>
+                                <span class="link">Resume</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#skills-card" id="skills">
+                                <span class="icon ion-paintbrush"></span>
+                                <span class="link">Skills</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacts-card" id="contact">
+                                <span class="icon ion-at"></span>
+                                <span class="link">Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </header>
+
             <div class="card-started" id="home-card">
                 <div class="profile">
                     <div class="slide" style="background-image: url(images/background.jpg);"></div>
@@ -59,7 +96,7 @@
                         <img src="images/profile.jpeg" alt=""/>
                     </div>
                     <div class="title">Muhadi</div>
-                    <div class="subtitle">Backend Developer</div>
+                    <div class="subtitle">Freelancer</div>
                     <div class="social">
                         <a target="_blank" href="https://gitlab.com/muhadi99"><span class="fab fa-gitlab"></span></a>
                         <a target="_blank" href="https://www.linkedin.com/in/muhadi-al-muhsin-904364159"><span class="fab fa-linkedin-in"></span></a>
@@ -69,100 +106,505 @@
                     </div>
 
                     <hr>
-                    <div class="text-box">
-                      <p style="padding-bottom:5%;margin-bottom:5%">
-                        <i>
-                          "Jika Anda ingin berjalan cepat, berjalanlah sendirian.<br>
-                          Tetapi jika Anda ingin berjalan jauh, <br>
-                          Maka berjalanlah bersama-sama"<br>
-                        </i>
-                      </p>
+                    <!-- profile buttons -->
+                    <div class="lnks">
+                        <a href="cv.pdf" class="lnk" target="_blank">
+                            <span class="text">Download CV</span>
+                            <span class="ion ion-archive"></span>
+                        </a>
+                        <a href="#contacts-card" class="lnk discover">
+                            <span class="text">Contact Me</span>
+                            <span class="arrow"></span>
+                        </a>
                     </div>
                 </div>
             </div>
+            <!-- ABOUT -->
             <div class="card-inner animated active" id="about-card">
                 <div class="card-wrap">
                     <div class="content about" style="margin-bottom:35px;">
-                        <div class="title">Tentang Saya</div>
+                        <div class="title">About me</div>
+                        <div class="row">
+                            <div class="col col-d-6 col-t-12 col-m-12 border-line-v" style="margin-bottom: 10px">
+                                <div class="text-box">
+                                    <div>
+                                        <strong><p>Hello! I’m Muhadi.</p></strong><p> Web developer from Indonesia. I have experience in coding and web based application development. I love to talk with you about our unique.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-d-6 col-t-12 col-m-12 border-line-v">
+                                <div class="info-list">
+                                    <ul>
+                                        <li> <strong> <span> Age: </span> </strong> <span> 21 </span></li>
+                                        <li> <strong> <span> Residence: </span> </strong> <span> Indonesia </span></li>
+                                        <li> <strong> <span> Freelance: </span> </strong> <span> Available </span></li>
+                                        <li> <strong> <span> Address: </span> </strong> <span> Pontianak</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <!--
+                        Services
+                    -->
+                    <div class="content services">
+
+                        <!-- title -->
+                        <div class="title">My Services</div>
+
+                        <!-- content -->
+                        <div class="row service-items border-line-v">
+                            <!-- service item -->
+                            <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+                                <div class="service-item" style="text-align: center;">
+                                    <div class="icon" style="background-color: #3596c0; margin: 0 auto"><span class="fa fa-code" style="color: white"></span></div>
+                                    <div class="name">Web Development</div>
+                                    <p>Web based application development</p>
+                                </div>
+                            </div>
+                            <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+                                <div class="service-item" style="text-align: center;">
+                                    <div class="icon" style="background-color: #3596c0; margin: 0 auto"><span class="fa fa-laptop" style="color: white"></span></div>
+                                    <div class="name">IT Consultant</div>
+                                    <p>Good skills in IT system solutions</p>
+                                </div>
+                            </div>
+                            <div class="col col-d-6 col-t-6 col-m-12 border-line-h">
+                                <div class="service-item" style="text-align: center;">
+                                    <div class="icon" style="background-color: #3596c0; margin: 0 auto"><span class="fa fa-chart-line" style="color: white"></span></div>
+                                    <div class="name">System Analyst</div>
+                                    <p>Research activities, planning, coordinating, as well as selecting software and systems to accommodate institutional needs</p>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="content clients">
+                        <div class="title"><span class="first-word"></span> <span>Supports</span></div>
+                        <div class="row client-items">
+                            <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                                <div class="client-item">
+                                    <div class="image"> <a href="#"> <noscript><img src="images/hdm.jpg" alt="Client 1" /></noscript><img class=" ls-is-cached lazyloaded" src="images/hdm.jpg" data-src="images/hdm.jpg" alt="Client 1"> </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                                <div class="client-item">
+                                    <div class="image"> <a href="#"> <noscript><img src="images/ybm.png" alt="Client 2" /></noscript><img class=" ls-is-cached lazyloaded" src="images/ybm.png" data-src="images/ybm.png" alt="Client 2"> </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                                <div class="client-item">
+                                    <div class="image"> <a href="#"> <noscript><img src="images/petik.png" alt="Client 3" /></noscript><img class=" ls-is-cached lazyloaded" src="images/petik.png" data-src="images/petik.png" alt="Client 3"> </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+                                <div class="client-item">
+                                    <div class="image"> <a href="#"> <noscript><img src="images/sttnf.png" alt="Client 4" /></noscript><img class=" ls-is-cached lazyloaded" src="images/sttnf.png" data-src="images/sttnf.png" alt="Client 4"> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content custom-text">
+                        <div class="title"><span class="first-word"></span> <span>Custom Text</span></div>
+                        <div class="row border-line-v">
+                            <div class="col col-m-12 col-t-12 col-d-12">
+                                <div class="post-box single-post-text">
+                                    <div class="blog-content">
+                                        <div><p>"I'm Muslim who is very interested in the world of IT, and the development of several Web-Based Applications and Database Administrators. Therefore, I'm very happy to implement and share what I already know with others, so that it can be useful in the world and in the hereafter". AAAMIIINNN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--RESUME-->
+            <div class="card-inner" id="resume-card">
+                <div class="card-wrap">
+                    <div class="content resume">
+                        <div class="title">Resume</div>
+                        <div class="row">
+                            <!-- education -->
+                            <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                                <div class="resume-title border-line-h">
+                                    <div class="icon"><i class="ion ion-university"></i></div>
+                                    <div class="name">Pendidikan</div>
+                                </div>
+                                <div class="resume-items">                                                                            
+                                    <div class="resume-item border-line-h active">
+                                        <div class="date">2018 - Sekarang</div>
+                                        <div class="name">S1 Sistem Informasi STT Terpadu Nurul Fikri</div>
+                                        <div class="company">Jakarta Selatan, DKI Jakarta</div>
+                                    </div>
+                                                                            
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">2017 - 2018</div>
+                                        <div class="name">D2 Program Profesi Pesantren Teknologi Informasi &amp; Komunikasi</div>
+                                        <div class="company">Depok, Jawa Barat</div>
+                                    </div>
+                                                                            
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">2014 - 2017</div>
+                                        <div class="name">SMA Hidayatul Muhsinin</div>
+                                        <div class="company">Kubu Raya, Kalimantan Barat</div>
+                                    </div>
+                                                                            
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">2011 - 2014</div>
+                                        <div class="name">MTs Hidayatul Muhsinin</div>
+                                        <div class="company">Kubu Raya, Kalimantan Barat</div>
+                                    </div>
+                                                                            
+                                    <div class="resume-item">
+                                        <div class="date">2005 - 2011</div>
+                                        <div class="name">SDN 35</div>
+                                        <div class="company">Pontianak Utara, Kalimantan Barat</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- experience -->
+                            <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                                <div class="resume-title border-line-h">
+                                    <div class="icon"><i class="ion ion-briefcase"></i></div>
+                                    <div class="name">Prestasi & Pengalaman</div>
+                                </div>
+                                <div class="resume-items">                             
+                                    <div class="resume-item border-line-h active">
+                                        <div class="date">2020 - Sekarang</div>
+                                        <div class="name">Backend Developer</div>
+                                        <div class="company">Jakarta Barat, DKI Jakarta</div>
+                                        <p>PT Redbuzz Mediatama</p>
+                                    </div>
+                                                                            
+                                    <div class="resume-item border-line-h ">
+                                        <div class="date">2019 - 2020</div>
+                                        <div class="name">IT Program</div>
+                                        <div class="company">Jakarta Barat, DKI Jakarta</div>
+                                        <p>PT Interlog Digital Indonesia</p>
+                                    </div>
+                                                                            
+                                    <div class="resume-item border-line-h ">
+                                        <div class="date">2018 - 2019</div>
+                                        <div class="name">Staff IT</div>
+                                        <div class="company">Bekasi, Jawa Barat</div>
+                                        <p>PT Reksa Inti Teknologi</p>
+                                    </div>
+                                                                            
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">2018</div>
+                                        <div class="name">Sertifikasi</div>
+                                        <div class="company">Depok, Jawa Barat</div>
+                                        <p>Sertifikasi Indonesia Android Kejar 3.0 Powered by Google Developers</p>
+                                    </div>
+
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">2018</div>
+                                        <div class="name">Sertifikasi</div>
+                                        <div class="company">Depok, Jawa Barat</div>
+                                        <p>Sertifikasi Indonesia Kompetensi Junior Web Programmer</p>
+                                    </div>
+
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">2018</div>
+                                        <div class="name">Prestasi Terbaik</div>
+                                        <div class="company">Depok, Jawa Barat</div>
+                                        <p>Alumni Terbaik Pesantren Teknologi Informasi dan Komunikasi Tahun 2018</p>
+                                    </div>
+
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">2017</div>
+                                        <div class="name">Prestasi Terbaik</div>
+                                        <div class="company">Kubu Raya, Kalimantan Barat</div>
+                                        <p>3 Besar Alumni Terbaik Pondok Pesantren Hidayatul Muhsinin</p>
+                                    </div>
+
+                                    <div class="resume-item border-line-h">
+                                        <div class="date">2014</div>
+                                        <div class="name">Prestasi Terbaik</div>
+                                        <div class="company">Kubu Raya, Kalimantan Barat</div>
+                                        <p>3 Besar Alumni Terbaik MTs Hidayatul Muhsinin</p>
+                                    </div>
+
+                                    <div class="resume-item">
+                                        <div class="date">2011</div>
+                                        <div class="name">Prestasi Terbaik</div>
+                                        <div class="company">Pontianak Utara, Kalimantan Barat</div>
+                                        <p>Nilai UN Tertinggi Pada Pendidikan SDN 35 Pontianak Utara</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SKILLS -->
+            <div class="card-inner" id="skills-card">
+                <div class="card-wrap">
+                    <div class="content skills">
+                        <div class="title">Skills</div>
+                    
+                        <!-- content -->
+                        <div class="row">
+                                                            
+                            <!-- skill item -->
+                            <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                                <div class="skills-list circles">
+                                    <div class="skill-title border-line-h">
+                                        <div class="icon"><i class="fas fa-user"></i></div>
+                                        <div class="name">Hardskill</div>
+                                    </div>
+                                    <ul>                                                                     
+                                        <li class="border-line-h"> 
+                                            <div class="progress-circle over50 p90" style="margin: 0 auto">
+                                              <span>90%</span>
+                                              <div class="left-half-clipper">
+                                                <div class="first50-bar"></div>
+                                                <div class="value-bar"></div>
+                                              </div>
+                                            </div><br>
+                                            <div class="name" style="text-align: center; color: black" ><b>WEB DEVELOPER</b><br> HTML, CSS, PHP, AJAX, Javascript, jQuery, JSON, RestAPI, UI & UX dan GIT</div>
+                                        </li>
+                                        <li class="border-line-h"> 
+                                            <div class="progress-circle over50 p85" style="margin: 0 auto">
+                                              <span>85%</span>
+                                              <div class="left-half-clipper">
+                                                <div class="first50-bar"></div>
+                                                <div class="value-bar"></div>
+                                              </div>
+                                            </div><br>
+                                            <div class="name" style="text-align: center; color: black" ><b>FRAMEWORK</b><br> PHP Natif, Codeigniter, Yii, Laravel</div>
+                                        </li>
+                                        <li class="border-line-h"> 
+                                            <div class="progress-circle over50 p80" style="margin: 0 auto">
+                                              <span>80%</span>
+                                              <div class="left-half-clipper">
+                                                <div class="first50-bar"></div>
+                                                <div class="value-bar"></div>
+                                              </div>
+                                            </div><br>
+                                            <div class="name" style="text-align: center; color: black" ><b>DATABASE</b><br> MariaDB, MySQL, SQL Server, PostgreSQL, dan Firebase</div>
+                                        </li>
+                                        <li class="border-line-h"> 
+                                            <div class="progress-circle over50 p80" style="margin: 0 auto">
+                                              <span>80%</span>
+                                              <div class="left-half-clipper">
+                                                <div class="first50-bar"></div>
+                                                <div class="value-bar"></div>
+                                              </div>
+                                            </div><br>
+                                            <div class="name" style="text-align: center; color: black" ><b>DATABASE ADMINISTRATOR (DBA)</b><br> SQL, UNIX, Linux dan familiar dengan Query dan Comand Line Open Source</div>
+                                        </li>
+                                        <li class="border-line-h"> 
+                                            <div class="progress-circle over50 p90" style="margin: 0 auto">
+                                              <span>90%</span>
+                                              <div class="left-half-clipper">
+                                                <div class="first50-bar"></div>
+                                                <div class="value-bar"></div>
+                                              </div>
+                                            </div><br>
+                                            <div class="name" style="text-align: center; color: black" ><b>ADMINISTRASI SYSTEM</b><br> Familiar Pengoperasian Administration System Open Source dan Server</div>
+                                        </li>
+                                        <li class="border-line-h"> 
+                                            <div class="progress-circle over50 p90" style="margin: 0 auto">
+                                              <span>90%</span>
+                                              <div class="left-half-clipper">
+                                                <div class="first50-bar"></div>
+                                                <div class="value-bar"></div>
+                                              </div>
+                                            </div><br>
+                                            <div class="name" style="text-align: center; color: black" ><b>TROUBLESHOOTING (IT Support)</b><br> Familiar Pengoperasian OS Linux & Windows</div>
+                                        </li>
+                                        <li> 
+                                            <div class="progress-circle over50 p90" style="margin: 0 auto">
+                                              <span>90%</span>
+                                              <div class="left-half-clipper">
+                                                <div class="first50-bar"></div>
+                                                <div class="value-bar"></div>
+                                              </div>
+                                            </div><br>
+                                            <div class="name" style="text-align: center; color: black" ><b>APLIKASI PERKANTORAN</b><br> Aplikasi Perkantoran (Microsoft Office & Libre Office) dan Mengetik 10 Jari</div>
+                                        </li>                      
+                                    </ul>
+                                </div>
+                            </div>
+                                                            
+                            <!-- skill item -->
+                            <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+                                <div class="skills-list circles">
+                                    <div class="skill-title border-line-h">
+                                        <div class="icon"><i class="fas fa-user"></i></div>
+                                        <div class="name">Softskill</div>
+                                    </div>
+                                    <ul>
+                                        <li class="border-line-h"> 
+                                            <div class="progress-circle over50 p90" style="margin: 0 auto">
+                                              <span>90%</span>
+                                              <div class="left-half-clipper">
+                                                <div class="first50-bar"></div>
+                                                <div class="value-bar"></div>
+                                              </div>
+                                            </div><br>
+                                            <div class="name" style="text-align: center; color: black" ><b>DISIPLIN</b></div>
+                                        </li>
+                                        <li class="border-line-h"> 
+                                            <div class="progress-circle over50 p85" style="margin: 0 auto">
+                                              <span>85%</span>
+                                              <div class="left-half-clipper">
+                                                <div class="first50-bar"></div>
+                                                <div class="value-bar"></div>
+                                              </div>
+                                            </div><br>
+                                            <div class="name" style="text-align: center; color: black" ><b>TANGGUNGJAWAB</b></div>
+                                        </li>
+                                        <li class="border-line-h"> 
+                                            <div class="progress-circle over50 p80" style="margin: 0 auto">
+                                              <span>80%</span>
+                                              <div class="left-half-clipper">
+                                                <div class="first50-bar"></div>
+                                                <div class="value-bar"></div>
+                                              </div>
+                                            </div><br>
+                                            <div class="name" style="text-align: center; color: black" ><b>KOMUNIKASI</b></div>
+                                        </li>
+                                        <li class="border-line-h"> 
+                                            <div class="progress-circle over50 p90" style="margin: 0 auto">
+                                              <span>90%</span>
+                                              <div class="left-half-clipper">
+                                                <div class="first50-bar"></div>
+                                                <div class="value-bar"></div>
+                                              </div>
+                                            </div><br>
+                                            <div class="name" style="text-align: center; color: black" ><b>TEAMWORK</b></div>
+                                        </li>
+                                        <li class="border-line-h"> 
+                                            <div class="progress-circle over50 p80" style="margin: 0 auto">
+                                              <span>80%</span>
+                                              <div class="left-half-clipper">
+                                                <div class="first50-bar"></div>
+                                                <div class="value-bar"></div>
+                                              </div>
+                                            </div><br>
+                                            <div class="name" style="text-align: center; color: black" ><b>INDIVIDUAL WORK</b></div>
+                                        </li>
+                                        <li class="border-line-h"> 
+                                            <div class="progress-circle over50 p85" style="margin: 0 auto">
+                                              <span>85%</span>
+                                              <div class="left-half-clipper">
+                                                <div class="first50-bar"></div>
+                                                <div class="value-bar"></div>
+                                              </div>
+                                            </div><br>
+                                            <div class="name" style="text-align: center; color: black" ><b>KREATIFITAS</b></div>
+                                        </li>
+                                        <li class="border-line-h"> 
+                                            <div class="progress-circle over50 p90" style="margin: 0 auto">
+                                              <span>90%</span>
+                                              <div class="left-half-clipper">
+                                                <div class="first50-bar"></div>
+                                                <div class="value-bar"></div>
+                                              </div>
+                                            </div><br>
+                                            <div class="name" style="text-align: center; color: black" ><b>EMPATI</b></div>
+                                        </li>            
+                                    </ul>
+                                </div>
+                            </div>
+                                                        
+                            <div class="clear"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--GALLERY-->
+            <div class="card-inner" id="gallery-card">
+                <div class="card-wrap">
+                    <div class="content gallery">
+                        <div class="title"> <span >Gallery</span></div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <!--CONTACTS-->
+            <div class="card-inner animated" id="contacts-card">
+                <div class="card-wrap">
+                    <div class="content about" style="margin-bottom:35px;">
+                        <div class="title">Contact Me</div>
+                        <div style="padding-top: 10px; padding-bottom: 10px">
+                            <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31918.546385226033!2d109.34827792292499!3d-0.006042806544480715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31e2a7f71dbce691%3A0xeeadee59fda2bef3!2sSiantan%20Hulu%2C%20Pontianak%20Utara%2C%20Kota%20Pontianak%2C%20Kalimantan%20Barat!5e0!3m2!1sid!2sid!4v1607992718110!5m2!1sid!2sid"></iframe><br />
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col col-d-6 col-t-12 col-m-12 border-line-v">
+                                <div class="info-list">
+                                    <ul>
+                                        <li> <strong> <span> Country: </span> </strong> <span> Pontianak </span></li>
+                                        <li> <strong> <span> WhatsApp: </span> </strong> <span> 0812-1811-4370 </span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col col-d-6 col-t-12 col-m-12 border-line-v">
+                                <div class="info-list">
+                                    <ul>
+                                        <li> <strong> <span> Email: </span> </strong> <span> muhadialmuhsin@gmail.com </span></li>
+                                        <li> <strong> <span> Freelance: </span> </strong> <span> Available </span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="content contacts">
+                        <div class="title"><span class="first-word"></span> <span>Contact Form</span></div>
                         <div class="row">
                             <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-                                <div class="text-box">
-                                    <p align="center">
-                                        السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ <br>
-                                    </p>
-                                    <p>
-                                        Berikut informasi ringkas pribadi saya:
-                                    </p>
+                                <div class="contact_form">
+                                    <div role="form" class="wpcf7" id="wpcf7-f62-o1" lang="en-US" dir="ltr">
+                                        <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p><ul></ul></div>
+                                        <form action="/ve1/#wpcf7-f62-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+                                            <div style="display: none;"> 
+                                                <input type="hidden" name="_wpcf7" value="62"> 
+                                                <input type="hidden" name="_wpcf7_version" value="5.3"> 
+                                                <input type="hidden" name="_wpcf7_locale" value="en_US"> 
+                                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f62-o1"> 
+                                                <input type="hidden" name="_wpcf7_container_post" value="0"> 
+                                                <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col col-d-6 col-t-6 col-m-12">
+                                                    <div class="group-val"> <span class="wpcf7-form-control-wrap your-name">
+                                                        <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-d-6 col-t-6 col-m-12">
+                                                    <div class="group-val"> <span class="wpcf7-form-control-wrap your-email">
+                                                        <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email Address"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-d-12 col-t-12 col-m-12">
+                                                    <div class="group-val"> <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Message"></textarea></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="align-left"><button type="button" class="button"><span class="text">Send Message</span><span class="arrow"></span></button>
+                                            </div>
+                                            <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                        </form>
+                                    </div>
                                 </div>
-
-                                <div class="text-box">
-                                    <strong>Nama</strong>
-                                    <p>
-                                      Muhadi
-                                    </p>
-                                </div>
-                                <hr>
-                                <div class="text-box">
-                                    <strong>Tempat, Tanggal Lahir</strong>
-                                    <p>
-                                      Pontianak, 13 Februari 1999
-                                    </p>
-                                </div>
-                                <hr>
-                                <div class="text-box">
-                                    <strong>Agama</strong>
-                                    <p>
-                                      Islam
-                                    </p>
-                                </div>
-                                <hr>
-                                <div class="text-box">
-                                    <strong>Domisili Sekarang</strong>
-                                    <p>
-                                      Jakarta, Indonesia
-                                    </p>
-                                </div>
-                                <hr>
-                                <div class="text-box">
-                                    <strong>Pekerjaan</strong>
-                                    <p>
-                                      Backend Developer
-                                    </p>
-                                </div>
-                                <hr>
-                                <div class="text-box">
-                                    <strong>Jabatan</strong>
-                                    <p>
-                                      Backend Developer<br>
-                                      PT. Redbuzz Mediatama
-                                    </p>
-                                </div>
-                                <hr>
-                                <div class="text-box">
-                                    <strong>Almamater</strong>
-                                    <p>
-                                      S1 Sistem Informasi STT Nurul Fikri 2018
-                                    </p>
-                                </div>
-                                <hr>
-                                <div class="text-box">
-                                    <strong>Status</strong>
-                                    <p>
-                                      Lajang
-                                    </p>
-                                </div>
-                                <hr>
-                                <div class="text-box" style="text-align: center;">
-                                    <strong >Motto</strong>
-                                    <p>
-                                      "Hidup Mulia Atau Mati Syahid".<br>
-                                      "Sebaik-baik manusia adalah yang paling<br>bermanfaat bagi manusia lainnya"
-                                    </p>
-                                </div>
-                                <hr>
-                                </div>
-                                <p align="center">وَ السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</p>
                             </div>
+                            <div class="clear"></div>
                         </div>
                     </div>
                 </div>
@@ -177,5 +619,33 @@
     <script src="js/masonry-filter.js"></script>
     <script src="js/jquery.slimscroll.js"></script>
     <script src="js/scripts.js"></script>
+    <script language="JavaScript">
+        document.addEventListener("contextmenu", function(e){
+            e.preventDefault();
+        }, false);
+    </script>
+    <script>
+        $(document).bind("contextmenu",function(e) {
+         alert('@copyright this resume & portfolio')//silahkan tulis pesan yang akan ditampilkan
+        });
+
+        document.onkeydown = function(e) {
+            if(event.keyCode == 123) {
+                return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+                alert('@copyright this resume & portfolio')
+                return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+                alert('@copyright this resume & portfolio')
+                return false;
+            }
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+                alert('@copyright this resume & portfolio')
+                return false;
+            }
+        }
+    </script>
   </body>
 </html>
