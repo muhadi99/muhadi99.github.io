@@ -1546,8 +1546,6 @@
    border-radius: 50%;
    /*biru*/
    border: 0.45em solid #6495ED; /*The border is 0.35 but making it larger removes visual artifacts */
-    /*merah*/
-   /*border: 0.45em solid #DC143C;*/
    /*background-color: #4D642D;*/ /* for debug */
    box-sizing: border-box;
   
